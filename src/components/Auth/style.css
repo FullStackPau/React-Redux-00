@@ -1,0 +1,58 @@
+.formauth{
+    width:350px;
+    height:450px;
+    margin:auto;
+    border-radius:5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.auth{
+    height:100%;
+    display:flex;
+    flex-flow: column nowrap;
+    padding-top:60px;
+    margin:auto;
+}
+.login {
+    padding-top:130px;
+}
+.auth > input {
+    width:240px;
+    height:40px;
+    border:1px solid rgb(180, 180, 180);
+    border-radius:5px;
+    padding-left:10px;
+    font-size:1em;
+    margin-bottom:5px;
+}
+.auth > p {
+    font-size:0.7em;    
+    margin-top:5px;
+    margin-bottom:5px;
+    cursor: pointer;
+    color:grey;
+
+}
+.auth > p:hover {
+    color: black;
+
+}
+.auth > button {
+    width:120px;
+    height:40px;
+    background: rgb(54, 54, 248);
+    border:1px solid grey;
+    border-radius:5px;
+    margin-top:5px;
+    margin-left:auto;
+    color:white;
+    font-size:1em;
+    font-weight:bold;
+    cursor:pointer;
+}
+.auth > button:hover{
+    background: rgb(83, 83, 250);
+}
