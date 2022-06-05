@@ -55,7 +55,6 @@ const Friends = () => {
             <div className="list">
                 {
                     userState.user.amigos.map(user => {
-                        console.log(user);
                         return(
                         <div className="userlist" key={user.id_friend}>
                             <div className="username">{user.name_friend}</div>

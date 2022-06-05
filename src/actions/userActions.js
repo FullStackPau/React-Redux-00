@@ -38,10 +38,7 @@ export function newFriend(user){
     return async (dispatch) => {
         try{
             const response = await axios.post("http://localhost:8000/newfriend", {user}, axiosConfig.config);
-            let userslist = [];
-            console.log(response.data.friends);
             if(response.data.friends.length < 0){
-                console.log("Entra");
                 const array = response.data.users.data.filter(user => user.id !== response.data.id_user);
                 dispatch(getAllUser(array));
                 dispatch(getAllFriends(response.data.friends));

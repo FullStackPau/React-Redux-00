@@ -23,7 +23,6 @@ const Register = () => {
 
     const Register = async () => {
         if(user.email.trim() !== "" && user.password.trim() !== "" && user.nombre.trim() !== "" && user.apellido.trim() !== "" && user.telefono.trim() !== "" && user.fecha.trim() !== ""){
-            console.log("Se manda");
             const response = await axios.post("http://localhost:8000/register", user, axiosConfig.config);
             if(response.data.login){
                 navigate("/dashboard");

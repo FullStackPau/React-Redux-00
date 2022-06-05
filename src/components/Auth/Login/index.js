@@ -13,12 +13,10 @@ const Login = () => {
 
 
     const Login = async () => {
-        console.log(axiosConfig);
         const response = await axios.post("http://localhost:8000/login",user,axiosConfig.config);
         if(response.data.login){
             window.location.href= "/dashboard";
         }
-        console.log(response);
     }
     return ( 
         <div className="auth login">

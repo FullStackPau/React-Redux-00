@@ -9,7 +9,6 @@ export function isLogged(){
         try{
             dispatch(loading(true));
             const response = await axios.get("http://localhost:8000/protected",axiosConfig.config);
-            console.log(response.data.auth);
             dispatch(isProtected(response.data.auth));
             dispatch(loading(false));
         }catch(e){

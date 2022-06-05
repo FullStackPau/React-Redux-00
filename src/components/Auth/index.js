@@ -17,14 +17,6 @@ import axios from 'axios';
 
 const Auth = () => {
 
-    useEffect(() => {
-        protectedRoute();
-    },[]);
-    async function protectedRoute(){
-        const response = await axios.get("http://localhost:8000/protected",axiosConfig.config);
-
-        console.log(response);
-    }
     return ( 
         <div className="formauth">
             <Outlet/>
